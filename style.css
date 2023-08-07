@@ -1,0 +1,92 @@
+body {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    background: linear-gradient(135deg, #87CEEB, #b8dcf4);
+
+    body::before,
+    body::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.6), transparent);
+    transform: translateY(-50%);
+}
+
+body::before {
+    left: 30%;
+}
+
+body::after {
+    right: 30%;
+}
+}
+
+#app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#city {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#submitBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #0056b3;
+}
+
+#cloudInfo {
+    margin-top: 20px;
+}
+
+#locationBtn {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #28A745;
+    color: #f2f5f7;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#locationBtn:hover {
+    background-color: #218838;
+}
+
+#forecastBtn {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #28A745;
+    color: #f2f5f7;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#forecastBtn:hover {
+    background-color: #28A745;
+}
